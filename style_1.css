@@ -31,7 +31,7 @@ body{
 	left:						0;
 	width:						100%;
 	height:						40vh;
-	background-image:			url("Wallpaper.jpg");
+	background-image:			url("./Wallpaper.jpg");
 	background-size:			120vmax;
 	z-index:					1;
 	animation-name:				dyno;
