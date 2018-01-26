@@ -1,15 +1,17 @@
 $(document).ready(() => {
+/*Default Values*/
+	$('.home').siblings().hide();
 
 //----------------------------------------------------------------------------------------------------
 /*Button Hover Animation START*/	
-$('.btn').on('mouseenter',(event) =>{
+$('.btnanim').on('mouseenter',(event) =>{
 	$(event.currentTarget).css({
 		color:						'rgb(0,0,0)',
 		backgroundColor:			'rgb(255,255,255)'
 	});
 })
 
-$('.btn').on('mouseleave',(event) =>{
+$('.btnanim').on('mouseleave',(event) =>{
 	$(event.currentTarget).css({
 		color:						'rgb(255,255,255)',
 		backgroundColor:			'transparent'
@@ -22,29 +24,34 @@ $('.btn').on('mouseleave',(event) =>{
 $('.btn').on('click', (event) => {
 		
 		switch(true){
+			case $(event.currentTarget).hasClass('btnHome'):
+				var $a = $('.btnHome');
+				var $b = $('.home');
+				
+			break;
 			case $(event.currentTarget).hasClass('btnAbout'):
 				var $a = $('.btnAbout');
 				var $b = $('.about');
 				
 			break;
-			case $(event.currentTarget).hasClass('btnBarb'):
-				var $a = $('.btnBarb');
-				var $b = $('.barb');
+			case $(event.currentTarget).hasClass('btnTeam'):
+				var $a = $('.btnTeam');
+				var $b = $('.team');
 				
 			break;
-			case $(event.currentTarget).hasClass('btnCont'):
-				var $a = $('.btnCont');
-				var $b = $('.cont');
+			case $(event.currentTarget).hasClass('btnGall'):
+				var $a = $('.btnGall');
+				var $b = $('.gall');
 				
 			break;
-			case $(event.currentTarget).hasClass('btnGps'):
-				var $a = $('.btnGps');
-				var $b = $('.gps');
+			case $(event.currentTarget).hasClass('btnList'):
+				var $a = $('.btnList');
+				var $b = $('.list');
 				
 			break;
 			default:
-				var $a = $('.btnAbout');
-				var $b = $('.about');
+				var $a = $('.btnHome');
+				var $b = $('.home');
 				
 		}
 	

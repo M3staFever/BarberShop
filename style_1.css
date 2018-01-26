@@ -8,18 +8,29 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+/* latin */
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v9/X1g_KwGeBV3ajZIXQ9VnDjxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 /*Style*/
 body{
 	box-sizing:					border-box;
 	background-color:			rgb(0,0,0);
 }
 /*-----------------------HEAD------------------------*/
+
+
 .made{
 	z-index:					1000;
-	font-size:					0.7vmax;
+	font-size:					0.8vmax;
 	color:						rgb(255,255,255);
 	font-family: 				'Playfair Display SC', 'Impact';
-	position:					Absolute;
+	position:					fixed;
 	width:						50%;
 	left:						25%;
 	text-align:					center;
@@ -33,7 +44,7 @@ body{
 	height:						40vh;
 	background-image:			url("./Wallpaper.jpg");
 	background-size:			120vmax;
-	z-index:					1;
+	z-index:					5;
 	animation-name:				dyno;
 	animation-duration:			10s;
 	animation-iteration-count: 	infinite;
@@ -41,10 +52,21 @@ body{
 	animation-timing-function: 	linear;
 	
 }
+
+.subwall{
+	position:					fixed;
+	top:						0;
+	left:						0;
+	width:						100%;
+	height:						20vh;
+	background-color:			rgb(0,0,0);
+	z-index:					1;
+	
+}
 .button{
 	display:					grid;
 	grid-template:				1fr/repeat(4, 1fr);
-	position:					Absolute;
+	position:					fixed;
 	top:						8%;
 	left:						0;
 	z-index:					1000;
@@ -66,6 +88,23 @@ body{
 
 /*-----------------------SECTIONS------------------------*/
 
+
+/*HOME*/
+.sct{
+	position:					absolute;
+	top:						40vh;
+	left:						0;
+	width:						100%;
+	text-align:					center;
+}
+
+.sectitle{
+	font-size:					3vmax;
+	color:						rgb(255,255,255);
+	font-family: 				'Abril Fatface';
+	height:						100%;
+	border-radius:				10%;
+}
 
 /*Animations*/
 
